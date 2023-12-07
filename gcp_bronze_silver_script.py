@@ -50,9 +50,9 @@ def copy_and_transform_data(source_bucket_name, source_folder_path, destination_
 
 if __name__ == "__main__":
     # Replace these values with your actual GCS information
-    source_bucket_name = "your-source-bucket-name"
-    source_folder_path = "bronze/folder/path"
-    destination_bucket_name = "your-destination-bucket-name"
-    destination_folder_path = "silver/folder/path"
+    source_bucket_name = "cnx_test_project1"
+    source_folder_path = "cnx_test_project1/data/bronze/"
+    destination_bucket_name = "cnx_test_project1"
+    destination_folder_path = "cnx_test_project1/data/silver/"
 
     copy_and_transform_data(source_bucket_name, source_folder_path, destination_bucket_name, destination_folder_path)

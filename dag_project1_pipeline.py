@@ -14,7 +14,8 @@ default_args = {
 }
 
 dag = DAG(
-    'dag_with_email',
+    dag_id='dag_with_email',
+    description='dag ETL test',
     default_args=default_args,
     schedule_interval='@daily',
     on_failure_callback=email_failure,

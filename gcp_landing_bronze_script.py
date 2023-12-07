@@ -30,8 +30,8 @@ def copy_data_to_bronze(source_bucket_name, source_folder_path, destination_buck
 if __name__ == "__main__":
     # Replace these values with your actual GCS information
     source_bucket_name = "cnx_test_project1"
-    source_folder_path = "cnx_test_project1/data/landing"
+    source_folder_path = "cnx_test_project1/data/landing/" 
     destination_bucket_name = "cnx_test_project1"
-    destination_folder_path = "cnx_test_project1/data/bronze"
+    destination_folder_path = "cnx_test_project1/data/bronze/"
 
     copy_data_to_bronze(source_bucket_name, source_folder_path, destination_bucket_name, destination_folder_path)
